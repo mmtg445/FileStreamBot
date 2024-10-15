@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RM Mσʋιҽ Fʅιx | {{file_name}}</title>
+    <title>FileStreamBot | {{file_name}}</title>
     <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
@@ -19,18 +19,16 @@
 
 <body>
     <nav>
-        <nav>
-    <div class="nleft">
-        <a href="https://t.me/RM_Movie_Flix">
-            <h3 id="heading" style="z-index: 100;" class="magnet title">RM Mσʋιҽ Fʅιx</h3>
-        </a>
-    </div>
-    <div class="nryt">
-        <a class="home-btn magnet" href="#main" onclick="toggleWidthnav(this)">HOME</a>
-        <a href="#abtus" class="about-btn magnet" onclick="toggleWidthnav(this)">ABOUT</a>
-    </div>
-</nav>
+        <div class="nleft">
+            <a href="#">
+                <h3 id="heading" style="z-index: 100;" class="magnet title">FILE STREAM</h3>
+            </a>
+        </div>
+        <div class="nryt">
+            <a class="home-btn magnet" href="#main" onclick="toggleWidthnav(this)">HOME</a>
 
+            <a href="#abtus" class="about-btn magnet" onclick="toggleWidthnav(this)">ABOUT</a>
+        </div>
     </nav>
     <center>
         <div class="about-nav">
@@ -47,8 +45,8 @@
                     width="100%"></video>
                 <div class="player"></div>
                 <div class="file-name">
-                    <h4 style="display: inline;" >File Name: </h4>
-                    <p style="display: inline;" id="myDiv" >RM Mσʋιҽ Fʅιx {{file_name}}</p><br>
+                    <h4 style="display: inline;">File Name: </h4>
+                    <p style="display: inline;" id="myDiv">{{file_name}}</p><br>
                     <h4 style="display: inline;">File Size: </h4>
                     <p style="display: inline;">{{file_size}}</p>
                 </div>
@@ -75,6 +73,17 @@
                 <div class="about">
                     <div class="about-dets">
 
+                        <div class="abt-sec" id="abtus" style="padding: 160px 30px;">
+                            <h1 style="text-align: center;">WELCOME TO OUR <Span>FILE STREAM</Span> BOT</h1>
+                            <p style="text-align: center; line-height: 2;word-spacing: 2px;  letter-spacing: 0.8px;">
+                                This is a Telegram Bot to Stream <span>Movies</span> and <span>Series</span> directly on
+                                Telegram. You can also
+                                <span>download</span> them if you want. This bot is developed by <a
+                                    href="https://github.com/AviPatilPro"><span style="font-weight: 700;">Avi</span></a>
+                                <br><br>If you like this bot, then don't
+                                forget to share it with your friends and family.
+                            </p>
+                        </div>
                         <div class="abt-sec" id="abtus" style="padding: 160px 30px;">
                             <h1 style="text-align: center;">WELCOME TO OUR <Span>FILE STREAM</Span> BOT</h1>
                             <p style="text-align: center; line-height: 2;word-spacing: 2px;  letter-spacing: 0.8px;">
@@ -136,38 +145,5 @@
 
                             </div>
                         </div>
-                    </div>
-                    <button class="ranMovBtn" onclick="getDets()">Get More Movies Suggestion</button>
-                </div>
 
-            </center>
-
-            <center>
-                <div class="copyright">
-                    <h5 class="text-center">Copyright © 2024 <a href="https://github.com/AviPatilPro"><span
-                                style="font-weight: 700;">Avishkar Patil</span></a>. All
-                        Rights Reserved.</h5>
-                </div>
-            </center>
-        </footer>
-    </div>
-</body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const uncopyableElement = document.querySelector(".uncopyable");
-
-        uncopyableElement.addEventListener("selectstart", function (event) {
-            event.preventDefault();
-        });
-    });
-</script>
-<script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-<script src="https://proavipatil.github.io/data/fs/src/script.js"></script>
-
-</html>
+                        </html>
